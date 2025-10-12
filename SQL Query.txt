@@ -222,6 +222,28 @@ INSERT INTO teacher(id,name,dept_id)VALUES(1,"karan",102);
 INSERT INTO teacher(id,name,dept_id)VALUES(2,"Ashwini",101);
 INSERT INTO teacher(id,name,dept_id)VALUES(3,"Ashwini",103);
 
+Cascading for FK:
+-----------------
+onDeleteCascade
+onUpdateCascade
 
+CREATE TABLE teacher(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+dept_id INT,
+FOREIGN KEY(dept_id)REFERENCES dept(id)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+);
 
+INSERT INTO dept VALUES(104,"english"),(105,"IT");
+
+INSERT INTO teacher VALUES(101,"Adam",101),(102,"Eve",102);
+
+UPDATE dept SET name="english" WHERE name="vaibhav";
+
+Table Related Queries:
+----------------------
+
+ 
 
