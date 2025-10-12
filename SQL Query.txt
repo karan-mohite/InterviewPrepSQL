@@ -205,6 +205,22 @@ DELETE FROM student WHERE marks<33;
 
 Revisiting FK:
 --------------
+CREATE TABLE dept(id INT PRIMARY KEY,name VARCHAR(50));
+
+CREATE TABLE teacher(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+dept_id INT,
+FOREIGN KEY(dept_id)REFERENCES dept(id)
+);
+
+INSERT INTO dept(id,name)VALUES(101,"Karan");
+INSERT INTO dept(id,name)VALUES(102,"Vishal");
+INSERT INTO dept(id,name)VALUES(103,"Ashwini");
+
+INSERT INTO teacher(id,name,dept_id)VALUES(1,"karan",102);
+INSERT INTO teacher(id,name,dept_id)VALUES(2,"Ashwini",101);
+INSERT INTO teacher(id,name,dept_id)VALUES(3,"Ashwini",103);
 
 
 
