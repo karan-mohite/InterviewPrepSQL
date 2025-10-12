@@ -9,3 +9,6 @@ drop database temp1;
 drop database temp2;
 
 use college;
+
+create table student(id INT PRIMARY KEY,name VARCHAR(50),age INT NOT NULL);
+
