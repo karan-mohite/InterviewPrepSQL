@@ -203,6 +203,9 @@ where rollno=102;
 
 DELETE FROM student WHERE marks<33;
 
+Revisiting FK:
+--------------
+
 
 
 
