@@ -138,27 +138,11 @@ SELECT marks FROM student;
 
 Group BY Clause:
 ----------------
+SELECT city,count(rollno)FROM student GROUP BY city;
 
+SELECT city,name,count(rollno,name)FROM student GROUP BY city,name;
 
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
+SELECT city,avg(marks)FROM student GROUP BY city;
 
 
 
