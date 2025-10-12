@@ -371,7 +371,32 @@ SELECT name FROM employee;
 
 SQL Sub Queries:
 -----------------
+CREATE TABLE student(
+     rollno INT PRIMARY KEY,
+     name VARCHAR(50),
+     marks INT NOT NULL,
+     grade VARCHAR(1),
+     city VARCHAR(20));
 
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(101,"karan",78,"C","pune");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(102,"Vishal",79,"B","Nagpur");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(103,"Ashwini",80,"A","Nashik");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(104,"Abhinav",85,"B","Karmala");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(105,"Vaishali",92,"A","Malegoan");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(106,"Saurab",50,"F","Baramati");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(107,"Pranjali",51,"G","Baramati");
+
+SELECT AVG(marks)FROM student;
+
+SELECT name,marks
+FROM student
+WHERE marks>73.5714;
+
+Combine SubQuery Below:
+=======================
+SELECT name,marks
+FROM student
+WHERE marks>(SELECT AVG(marks)FROM student);
 
 
 
