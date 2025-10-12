@@ -244,6 +244,8 @@ UPDATE dept SET name="english" WHERE name="vaibhav";
 
 Table Related Queries:
 ----------------------
+alter:
+======
 
  
 
