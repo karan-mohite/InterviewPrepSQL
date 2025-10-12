@@ -4,9 +4,13 @@ create database temp2;
 
 create database college;
 
+create database IF NOT EXISTS college;
+
 drop database temp1;
  
 drop database temp2;
+
+DROP DATABASE IF EXISTS company;
 
 use college;
 
@@ -17,6 +21,28 @@ INSERT INTO student VALUES(2,"Vishal",27);
 INSERT INTO student VALUES(3,"Ashwini",28);
 
 SELECT *FROM student;
+
+SHOW DATABASES;
+
+SHOW TABLES;
+
+DROP TABLE student;
+
+CREATE TABLE student(rollno INT PRIMARY KEY,name VARCHAR(50));
+
+SELECT *FROM student;
+
+INSERT INTO student(rollno,name) VALUES(101,"karan");
+INSERT INTO student(rollno,name) VALUES(102,"Arjun");
+INSERT INTO student(rollno,name) VALUES(103,"Ashwini");
+
+
+
+
+
+
+
+
 
 
  
