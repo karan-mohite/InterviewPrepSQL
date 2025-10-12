@@ -371,6 +371,8 @@ SELECT name FROM employee;
 
 SQL Sub Queries:
 -----------------
+Que1):
+----
 CREATE TABLE student(
      rollno INT PRIMARY KEY,
      name VARCHAR(50),
@@ -382,9 +384,9 @@ INSERT INTO student(rollno,name,marks,grade,city)VALUES(101,"karan",78,"C","pune
 INSERT INTO student(rollno,name,marks,grade,city)VALUES(102,"Vishal",79,"B","Nagpur");
 INSERT INTO student(rollno,name,marks,grade,city)VALUES(103,"Ashwini",80,"A","Nashik");
 INSERT INTO student(rollno,name,marks,grade,city)VALUES(104,"Abhinav",85,"B","Karmala");
-INSERT INTO student(rollno,name,marks,grade,city)VALUES(105,"Vaishali",92,"A","Malegoan");
-INSERT INTO student(rollno,name,marks,grade,city)VALUES(106,"Saurab",50,"F","Baramati");
-INSERT INTO student(rollno,name,marks,grade,city)VALUES(107,"Pranjali",51,"G","Baramati");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(105,"Vaishali",96,"A","Delhi");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(106,"Saurab",92,"F","Delhi");
+INSERT INTO student(rollno,name,marks,grade,city)VALUES(107,"Pranjali",82,"G","Delhi");
 
 SELECT AVG(marks)FROM student;
 
@@ -397,6 +399,47 @@ Combine SubQuery Below:
 SELECT name,marks
 FROM student
 WHERE marks>(SELECT AVG(marks)FROM student);
+
+Que2):
+------
+SELECT rollno  
+FROM student
+WHERE rollno % 2=0;
+
+SELECT name ,rollno
+FROM student
+WHERE rollno IN(102,104,106);
+
+Combine SubQuery Below:
+=======================
+SELECT name ,rollno
+FROM student
+WHERE rollno IN(
+SELECT rollno  
+FROM student
+WHERE rollno % 2=0;);
+
+Que3):
+------
+Using subquery:
+
+SELECT Max(marks)
+FROM(SELECT *FROM student WHERE city="Delhi")As temp;
+
+SQL query:
+
+SELECT Max(marks) FROM student WHERE city="Delhi";
+
+
+SQL SubQuery:
+-------------
+Example with SELECT:
+
+
+
+
+
+
 
 
 
