@@ -187,4 +187,22 @@ Table Related Queries:
 UPDATE student SET grade="O"
 where grade="A";
 
+UPDATE student SET marks=82
+where marks=50;
+
+UPDATE student SET grade="F"
+where marks>80;
+
+UPDATE student SET grade="B"
+where marks BETWEEN 80 AND 90;
+
+UPDATE student SET marks=marks+1;
+
+UPDATE student SET marks=12
+where rollno=102;
+
+DELETE FROM student WHERE marks<33;
+
+
+
 
