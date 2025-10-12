@@ -106,6 +106,18 @@ SELECT *FROM student WHERE marks>=80 AND city="Nashik";
 
 SELECT *FROM student WHERE marks>80 OR city="Nashik";
 
+SELECT *FROM student WHERE marks BETWEEN 80 AND 90;
+
+SELECT *FROM student WHERE city IN("pune","Karmala");
+
+SELECT *FROM student WHERE city IN("Sakharwadi","Pimpalwadi");
+
+SELECT *FROM student WHERE city NOT IN("Karmala","pune");
+
+
+
+
+
 
 
 
