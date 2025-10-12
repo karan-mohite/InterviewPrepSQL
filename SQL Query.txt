@@ -114,6 +114,18 @@ SELECT *FROM student WHERE city IN("Sakharwadi","Pimpalwadi");
 
 SELECT *FROM student WHERE city NOT IN("Karmala","pune");
 
+SELECT *FROM student LIMIT 3;
+
+SELECT *FROM student WHERE marks >70 LIMIT 3;
+
+SELECT *FROM student ORDER BY marks ASC;
+
+SELECT *FROM student ORDER BY marks DESC;
+
+SELECT *FROM student ORDER BY marks DESC LIMIT 3;
+
+
+
 
 
 
