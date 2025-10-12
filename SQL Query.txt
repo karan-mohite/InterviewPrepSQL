@@ -184,5 +184,7 @@ ORDER BY city DESC;
 
 Table Related Queries:
 ----------------------
+UPDATE student SET grade="O"
+where grade="A";
 
 
