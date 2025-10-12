@@ -12,3 +12,11 @@ use college;
 
 create table student(id INT PRIMARY KEY,name VARCHAR(50),age INT NOT NULL);
 
+INSERT INTO student VALUES(1,"karan",26);
+INSERT INTO student VALUES(2,"Vishal",27);
+INSERT INTO student VALUES(3,"Ashwini",28);
+
+SELECT *FROM student;
+
+
+ 
