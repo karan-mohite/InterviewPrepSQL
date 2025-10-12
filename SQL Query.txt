@@ -435,10 +435,14 @@ SQL SubQuery:
 -------------
 Example with SELECT:
 
+SELECT(SELECT  Max(marks) FROM student),name FROM student;
+
+SELECT(SELECT  marks FROM student),name FROM student;  
+//This above query show follwing error:Subquery returns more than 1 row
 
 
-
-
+MYSQL View:
+-----------
 
 
 
