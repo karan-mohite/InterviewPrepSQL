@@ -271,6 +271,32 @@ DROP COLUMN stu_age;
 ALTER TABLE student
 RENAME TO stu;
 
+TRUNCATE TABLE student;
+
+Practise Questions:
+-------------------
+Que)Change the name of column name to full name.
+ALTER TABLE student
+CHANGE name full_name varchar(50);
+
+Que)Delete all the student who scored marks less than 80
+DELETE FROM student
+WHERE marks<80;
+
+Que)Delete the column for grade
+ALTER TABLE student
+DROP COLUMN grade;
+
+Joins in SQL:
+-------------
+
+
+
+
+
+
+
+
 
 
 
