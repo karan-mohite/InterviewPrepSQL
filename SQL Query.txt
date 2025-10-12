@@ -102,6 +102,13 @@ SELECT *FROM student WHERE marks=50;
 
 SELECT *FROM student WHERE marks>50;
 
+SELECT *FROM student WHERE marks>=80 AND city="Nashik";
+
+SELECT *FROM student WHERE marks>80 OR city="Nashik";
+
+
+
+
 
 
 
