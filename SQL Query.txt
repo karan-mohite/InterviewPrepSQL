@@ -94,6 +94,16 @@ SELECT *FROM student WHERE marks>80;
 
 SELECT *FROM student WHERE city="Baramati";
 
+SELECT *FROM student WHERE marks>40 AND city="Baramati";
+
+SELECT *FROM student WHERE marks+10>100;
+
+SELECT *FROM student WHERE marks=50;
+
+SELECT *FROM student WHERE marks>50;
+
+
+
 
 
 
