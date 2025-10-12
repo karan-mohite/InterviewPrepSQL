@@ -175,3 +175,14 @@ where condition
 GROUP BY column(s)
 HAVING condition
 ORDER BY column(s) ASC;
+
+SELECT city FROM student
+where grade="A"
+GROUP BY city
+HAVING Max(marks)>80
+ORDER BY city DESC;
+
+Table Related Queries:
+----------------------
+
+
