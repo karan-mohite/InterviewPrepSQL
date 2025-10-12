@@ -124,6 +124,20 @@ SELECT *FROM student ORDER BY marks DESC;
 
 SELECT *FROM student ORDER BY marks DESC LIMIT 3;
 
+Aggregate Function:
+-----------------
+SELECT max(marks)FROM student;
+
+SELECT avg(marks)FROM student;
+
+SELECT min(marks)FROM student;
+
+SELECT COUNT(name)FROM student;
+
+SELECT marks FROM student;
+
+Group BY Clause:
+----------------
 
 
 
