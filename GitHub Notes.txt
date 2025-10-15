@@ -1,0 +1,33 @@
+git clone https://github.com/karan-mohite/studentapanacollege.git
+this command is used to remote repository give to the local machine 
+
+cd studentapanacollege
+
+clear
+
+ls -a  ==this -a show all hidden files 
+ 
+git status
+
+PS C:\Users\DELL\Desktop\GitDemo\studentapanacollege> git add index.html
+This above command is used to add one file to the github 
+
+PS C:\Users\DELL\Desktop\GitDemo\studentapanacollege> git status
+
+PS C:\Users\DELL\Desktop\GitDemo\studentapanacollege> git add . 
+this above command is used if we want to add multiple file to the github at the
+same time then we used above command 
+
+PS C:\Users\DELL\Desktop\GitDemo\studentapanacollege> git commit -m "Add new paragraph"
+if we used this command then conetent cannot be uploaded to the github if we can upload
+the conetent then we used push command 
+
+git push origin main --force 
+this command is used when we applay changes in our code then this command is used 
+to update this conetent to the github
+
+git rebase --continue
+
+
+
+
