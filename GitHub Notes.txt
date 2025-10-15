@@ -28,6 +28,117 @@ to update this conetent to the github
 
 git rebase --continue
 
+Below command is used to create a folder in github using terminal 
+PS C:\Users\DELL\Desktop\GitDemo> cd .. 
+PS C:\Users\DELL\Desktop> cd gitDemo
+PS C:\Users\DELL\Desktop\gitDemo> mkdir LocalRepo
+
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> cd ..
+PS C:\Users\DELL\Desktop\gitDemo> cd LocalRepo
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> ls -a
+
+
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> git commit -m "add initial file"
+[main (root-commit) a82e4e7] add initial file
+ 2 files changed, 4 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+ 
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> git status 
+On branch main
+nothing to commit, working tree clean
+
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> git remote add origin https://github.com/karan-mohite/localrepo.git
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> git remote -v 
+origin  https://github.com/karan-mohite/localrepo.git (fetch)
+origin  https://github.com/karan-mohite/localrepo.git (push)
+
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> git branch 
+* main
+
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> git branch -M main1
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> git branch
+* main1
+
+PS C:\Users\DELL\Desktop\gitDemo\LocalRepo> git push origin main --force
+
+
+--------------------------
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git branch
+* main
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git checkout -b feature1
+Switched to a new branch 'feature1'
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git branch
+* feature1
+  main
+  
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git checkout main
+D       apanacollegestudent
+D       index.html
+D       style.css
+Switched to branch 'main'
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git branch
+  feature1
+* main
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git checkout feature1
+D       apanacollegestudent
+D       index.html
+D       style.css
+Switched to branch 'feature1'
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git branch
+* feature1
+  main
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git checkout main     
+D       apanacollegestudent
+D       index.html
+D       style.css
+Switched to branch 'main'
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git branch
+  feature1
+  feature2
+* main
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git branch -d feature2
+Deleted branch feature2 (was 47f9ff7).
+
+PS C:\Users\DELL\Desktop\GitDemo\LocalRepo> git branch
+  feature1
+* main
+
+
+remote che changes local machine ver ghenya sathi pull request use kertat
+PS C:\Users\DELL\Desktop\GitDemo> git branch          
+  feature1
+* main
+
+PS C:\Users\DELL\Desktop\GitDemo> git pull origin main
+From https://github.com/karan-mohite/localrepo
+ * branch            main       -> FETCH_HEAD
+ 
+PS C:\Users\DELL\Desktop\GitDemo> git reset -- index1.html
+if we reset all changes  in file then we can use this 
+
+
+PS C:\Users\DELL\Desktop\GitDemo> git reset HEAD~1
+this command is used to reset the recent changes (for one commit)
+
+PS C:\Users\DELL\Desktop\GitDemo> git log
+this command is used to check all commit 
+
+PS C:\Users\DELL\Desktop\GitDemo> git reset 6e2a3af951580aa097e073bf622900431bee220a
+this command is used reset (for many commit)
+
+PS C:\Users\DELL\Desktop\GitDemo> git reset --hard  545db0510beee64b9bbb770ea740d08b35e67bd9
+this command is used to reset the changes also vs code and github
+
+
 
 
 
